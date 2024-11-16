@@ -33,6 +33,7 @@ class ComposerStaticInitc5b7344a4117fb2177a762f1895475b0
         'CyrToLat\\BackgroundProcesses\\TermConversionProcess' => __DIR__ . '/../..' . '/src/php/BackgroundProcesses/TermConversionProcess.php',
         'CyrToLat\\ConversionTables' => __DIR__ . '/../..' . '/src/php/ConversionTables.php',
         'CyrToLat\\Converter' => __DIR__ . '/../..' . '/src/php/Converter.php',
+        'CyrToLat\\ErrorHandler' => __DIR__ . '/../..' . '/src/php/ErrorHandler.php',
         'CyrToLat\\Main' => __DIR__ . '/../..' . '/src/php/Main.php',
         'CyrToLat\\Request' => __DIR__ . '/../..' . '/src/php/Request.php',
         'CyrToLat\\Requirements' => __DIR__ . '/../..' . '/src/php/Requirements.php',
