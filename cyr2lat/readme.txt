@@ -1,10 +1,10 @@
 === Cyr-To-Lat ===
 Contributors: SergeyBiryukov, mihdan, kaggdesign, karevn, webvitaly
 Tags: cyrillic, slugs, translation, transliteration
-Requires at least: 5.3
-Tested up to: 6.8
-Requires PHP: 7.2
-Stable tag: 6.5.0
+Requires at least: 6.0
+Tested up to: 7.0
+Requires PHP: 7.4
+Stable tag: 6.8.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,11 +12,11 @@ Convert Non-Latin characters in post, page and term slugs to Latin characters.
 
 == Description ==
 
-Converts Cyrillic characters in post, page and term slugs to Latin characters. Useful for creating human-readable URLs.
+Converts Cyrillic characters in post, page, and term slugs to Latin characters. Useful for creating human-readable URLs.
 
 = Features =
-* The only plugin with a fully editable transliteration table. Allows to add/remove and edit pairs like 'Я' => 'Ya', or even 'Пиво' => 'Beer'
-* Converts any number of existing post, page and term slugs in background processes
+* The only plugin with a fully editable transliteration table. Allows adding/removing and editing pairs like 'Я' => 'Ya', or even 'Пиво' => 'Beer'
+* Converts any number of existing post, page, and term slugs in background processes
 * Saves existing post and page permalinks integrity
 * Performs transliteration of attachment file names
 * The plugin supports Russian, Belorussian, Ukrainian, Bulgarian, Macedonian, Serbian, Greek, Armenian, Georgian, Kazakh, Hebrew, and Chinese characters
@@ -221,9 +221,38 @@ Yes, you can!
 
 = Where do I report security bugs found in this plugin? =
 
-Please report security bugs found in the source code of the undefined plugin through the [Patchstack Vulnerability Disclosure  Program](https://patchstack.com/database/vdp/b6b7bcdc-2668-4aed-9226-8e3b5e809ab0). The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.
+Please report security vulnerabilities by email to:
+
+**security@kagg.eu**
+
+When reporting a vulnerability, please include as much information as possible to help us reproduce and investigate the issue, such as:
+
+- A clear description of the vulnerability
+- Steps to reproduce
+- Proof-of-concept or exploit code (if available)
+- Affected versions
+
+We will review your report and respond as quickly as possible.
 
 == Changelog ==
+
+= 6.8.0 (10.05.2026) =
+* Fixed returning unexpected results by REST API in some cases.
+* Fixed import of WooCommerce products.
+* Fixed transliteration of product categories, brands, and tags.
+
+= 6.7.0 (01.04.2026) =
+* The minimum required PHP version is now 7.4.
+* The minimum required WordPress version is now 6.0.
+* Fixed a fatal error occurred with WP-CLI in a rare case.
+* Fixed transliteration of WC local attributes.
+* Tested with WordPress 7.0.
+
+= 6.6.0 (30.11.2025) =
+* Fixed the deprecated function message in Main.php with WordPress 6.9.
+* Tested with PHP 8.4.
+* Tested with WordPress 6.9.
+* Tested with WooCommerce 10.3.
 
 = 6.5.0 (24.10.2025) =
 * Fixed transliteration of tags during editing.
@@ -238,7 +267,7 @@ Please report security bugs found in the source code of the undefined plugin thr
 * Removed fix for translation after WordPress 6.5+ due to performance issues.
 
 = 6.2.3 (24.11.2024) =
-* Fixed deprecation error with PHP 8.4.
+* Fixed the deprecation error with PHP 8.4.
 * Tested with PHP 8.4.
 
 = 6.2.2 (15.11.2024) =
@@ -246,7 +275,7 @@ Please report security bugs found in the source code of the undefined plugin thr
 * Some translations were empty with WordPress 6.5+.
 
 = 6.2.1 (13.11.2024) =
-* Fixed layout of the Converter page.
+* Fixed the layout of the Converter page.
 * Fixed issues reported by Plugin Check Plugin.
 
 = 6.2.0 (13.11.2024) =
@@ -259,7 +288,7 @@ Please report security bugs found in the source code of the undefined plugin thr
 = 6.1.0 (09.03.2024) =
 * Tested with WordPress 6.5.
 * Tested with WooCommerce 8.6.
-* Fixed error on the System Info tab when post types or post statuses are not set.
+* Fixed the error on the System Info tab when post types or post statuses are not set.
 
 = 6.0.8 (14.02.2024) =
 * Improved detection of the Gutenberg editor.
@@ -290,7 +319,7 @@ Please report security bugs found in the source code of the undefined plugin thr
 * Fixed the fatal error with Jetpack sync.
 
 = 6.0.2 (26.07.2023) =
-* Fixed fatal error in admin_footer_text().
+* Fixed the fatal error in admin_footer_text().
 
 = 6.0.1 (26.07.2023) =
 * Fixed the fatal error on the System Info page with empty options.
@@ -301,7 +330,7 @@ Please report security bugs found in the source code of the undefined plugin thr
 * Tested with WooCommerce 7.9.
 * Added System Info tab.
 * Added filter 'ctl_allow'
-* Fixed console error when saving table data.
+* Fixed the console error when saving table data.
 * Fixed the current table setting on the Tables page with WPML.
 
 [See changelog for all versions](https://plugins.svn.wordpress.org/cyr2lat/trunk/changelog.txt).
